@@ -1563,7 +1563,7 @@ html, body {
   }
 
   /* ── Main content area ── */
-  .main-content {
+  .main {
     grid-column: 1;
     overflow-y: auto;
     overflow-x: hidden;
@@ -2099,7 +2099,6 @@ html, body {
   </div>
 
 </div>
-    </div>
 
     <!-- Hits + Targets grid -->
     <div class="section-pad" style="padding-top:20px;">
@@ -2204,6 +2203,7 @@ html, body {
       </div>
     </div>
   </div>
+</div>
 
 <div class="tab-panel" id="tab-targets">
     <div class="section-pad" style="border-bottom:1px solid var(--border); background:var(--surface);">
@@ -4386,7 +4386,7 @@ function switchTab(id, btn) {
   }
 
   // Scroll content to top on mobile
-  const mc = document.querySelector('.main-content');
+  const mc = document.querySelector('.main');
   if (mc) mc.scrollTop = 0;
 
   // Update page header
